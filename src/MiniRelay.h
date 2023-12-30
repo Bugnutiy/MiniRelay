@@ -55,7 +55,7 @@ bool Relay::getState()
 /// @brief Переключить реле
 void Relay::change()
 {
-    _setState(!getState());
+    _state=!_state;
     digitalWrite(_pin, _state);
 }
 
